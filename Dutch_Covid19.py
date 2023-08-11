@@ -1,15 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
 import pandas as pd
 import matplotlib.pyplot as plt
 import streamlit as st
-
-
-# In[29]:
 
 
 df = pd.read_csv('DutchData_Dashboard.csv')
