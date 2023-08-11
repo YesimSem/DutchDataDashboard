@@ -37,7 +37,7 @@ fig = plt.figure(figsize = (19, 10))
 plt.bar(filtered_data['Province'], filtered_data['Total_reported'], color = 'maroon')
 plt.xlabel('Province')
 plt.ylabel('Reported COVID-19 cases')
-plt.title('Provinces in the Netherlands \ Number of Reported COVID-19 cases')
+plt.title('Provinces in the Netherlands \ Average Count of the Reported COVID-19 cases')
 
 st.pyplot(fig)
 
