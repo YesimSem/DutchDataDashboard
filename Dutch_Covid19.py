@@ -12,7 +12,7 @@ import streamlit as st
 # In[29]:
 
 
-df = pd.read_csv('D:\\Downloads\\DutchData_Dashboard.csv')
+df = pd.read_csv('DutchData_Dashboard.csv')
 df = df.groupby('Province')['Total_reported'].mean()
 df = df.reset_index()
 fig = plt.figure(figsize = (19, 10))
