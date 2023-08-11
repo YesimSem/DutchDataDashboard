@@ -21,8 +21,8 @@ plt.bar(df['Province'], df['Total_reported'], color = 'maroon')
 plt.xlabel('Province')
 plt.ylabel('Reported COVID-19 cases')
 plt.title('Provinces in the Netherlands \ Number of Reported COVID-19 cases')
-
-province_list = st.multiselect('Choose Province:',pro)
+pro = df['Province'].unique().tolist()
+province_list = st.multiselect('Choose Province:',options = pro)
 
 
 #displaying the selected options
