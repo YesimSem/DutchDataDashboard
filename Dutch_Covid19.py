@@ -28,7 +28,7 @@ if not province_list:
 else:
     filtered_data = df.loc[df["Province"].isin(province_list)]
 
-st.dataframe(filtered_data, width=1000, height=500)
+# st.dataframe(filtered_data, width=1000, height=500)
 
 # from this point on, only the filtered data is used 
 
