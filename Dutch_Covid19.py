@@ -21,5 +21,23 @@ plt.bar(df['Province'], df['Total_reported'], color = 'maroon')
 plt.xlabel('Province')
 plt.ylabel('Reported COVID-19 cases')
 plt.title('Provinces in the Netherlands \ Number of Reported COVID-19 cases')
+
+province_list = st.multiselect('Choose Province:',
+                                        pro, default = ['Drenthe',\
+                                         'Flevoland',
+ 'Fryslân',
+ 'Gelderland',
+ 'Groningen',
+ 'Noord-Brabant',
+ 'Noord-Holland',
+ 'Overijssel',
+ 'Utrecht',
+ 'Zeeland',
+ 'Zuid-Holland'])
+
+
+#displaying the selected options
+
+st.write('You have selected:', province_list)
 st.pyplot(fig)
 
